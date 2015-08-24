@@ -3,7 +3,7 @@ M="commit and push"
 
 
 pull:
-	echo "core_eventDispatcher" && cd core_eventDispatcher && git pull origin master && \
+	echo "core_eventDispatcher" && cd ../core_eventDispatcher && git pull origin master && \
 	echo "core_eventHandlerBase" && cd ../core_eventHandlerBase && git pull origin master && \
 	echo "core_eventModels" && cd ../core_eventModels && git pull origin master && \
 	echo "core_eventRepository" && cd ../core_eventRepository && git pull origin master && \
@@ -12,7 +12,7 @@ pull:
 	echo "core_yowlWrapper" && cd ../core_yowlWrapper && git pull origin master && cd ..; 
 	
 com:
-	echo "core_eventDispatcher" && cd core_eventDispatcher && git com $(M); \
+	echo "core_eventDispatcher" && cd ../core_eventDispatcher && git com $(M); \
 	echo "core_eventHandlerBase" && cd ../core_eventHandlerBase && git com $(M); \
 	echo "core_eventModels" && cd ../core_eventModels && git com $(M); \
 	echo "core_eventRepository" && cd ../core_eventRepository && git com $(M);  \
@@ -22,7 +22,7 @@ com:
 
 
 push:
-	echo "core_eventDispatcher" && cd core_eventDispatcher &&  git push origin master; \
+	echo "core_eventDispatcher" && cd ../core_eventDispatcher &&  git push origin master; \
 	echo "core_eventHandlerBase" && cd ../core_eventHandlerBase &&  git push origin master; \
 	echo "core_eventModels" && cd ../core_eventModels &&  git push origin master; \
 	echo "core_eventRepository" && cd ../core_eventRepository &&  git push origin master; \
